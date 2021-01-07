@@ -1,0 +1,332 @@
+@import url(https://fonts.googleapis.com/css?family=Pattaya|Work+Sans:400,200,300);
+a,body,div,footer,h1,h2,h3,h4,h5,h6,header,html,img,p{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size: 16px;
+    font-family:"Work Sans",sans-serif;
+    vertical-align:baseline
+}
+footer,header{
+    display:block
+}
+html, body {
+    height: 100%;
+}
+body{
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    -webkit-text-size-adjust:none
+}
+*,:after,:before{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+}
+@media screen and (max-width:480px){
+    body,html{
+        min-width:320px
+    }
+}
+body{
+    background-color:#fff;
+    color:#444
+    font-family:"Work Sans",sans-serif;
+    font-size:13pt;
+    font-weight:300;
+    line-height:1.65
+}
+@media screen and (max-width:1680px){
+    body{
+        font-size:11pt
+    }
+}
+@media screen and (max-width:1280px){
+    body{
+        font-size:11pt
+    }
+}
+@media screen and (max-width:980px){
+    body{
+        font-size:12pt
+    }
+}
+@media screen and (max-width:736px){
+    body{
+        font-size:12pt
+    }
+}
+@media screen and (max-width:480px){
+    body{
+        font-size:12pt
+    }
+}
+a{
+    text-decoration:underline;
+    outline:0
+}
+a:hover{
+    text-decoration:none
+}
+p{
+    margin:0 0 2em 0
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:300;
+    line-height:1.5;
+    margin:0 0 1em 0
+}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
+    color:inherit;
+    text-decoration:none
+}
+h2{
+    font-size:1.75em
+}
+h3{
+    font-size:1.35em
+}
+h4{
+    font-size:1.1em
+}
+h5{
+    font-size:.9em
+}
+h6{
+    font-size:.7em
+}
+a{
+    color:#e74c3c
+}
+h1,h2,h3,h4,h5,h6{
+    color:#555
+}
+::-webkit-input-placeholder{
+    opacity:1
+}
+:-moz-placeholder{
+    opacity:1
+}
+::-moz-placeholder{
+    opacity:1
+}
+:-ms-input-placeholder{
+    opacity:1
+}
+::-webkit-input-placeholder{
+    color:#bbb!important
+}
+:-moz-placeholder{
+    color:#bbb!important
+}
+::-moz-placeholder{
+    color:#bbb!important
+}
+:-ms-input-placeholder{
+    color:#bbb!important
+}
+.image{
+    border-radius:4px;
+    border:0;
+    display:inline-block;
+    position:relative
+}
+.image img{
+    border-radius:4px;
+    display:block
+}
+.image.fit{
+    display:block;
+    margin:0 0 2em 0;
+    width:100%
+}
+.image.fit img{
+    width:100%
+}
+.image.main{
+    display:block;
+    margin:0 0 3em 0;
+    width:100%
+}
+.image.main img{
+    width:100%
+}
+.columns{
+    position:relative;
+    -moz-column-count:4;
+    -webkit-column-count:4;
+    column-count:4;
+    -moz-column-gap:1em;
+    -webkit-column-gap:1em;
+    column-gap:1em
+}
+.columns .image{
+    position:relative;
+    display:inline-block;
+    margin:0 0 .5em;
+    width:100%;
+    overflow:hidden
+}
+.columns .image img{
+    -moz-transition:-moz-transform .2s ease-in-out;
+    -webkit-transition:-webkit-transform .2s ease-in-out;
+    -ms-transition:-ms-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+    -webkit-backface-visibility:hidden;
+    -webkit-transform:translate3D(0,0,0)
+}
+.columns .image:hover img{
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1)
+}
+@media screen and (max-width:736px){
+    .columns{
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count:2
+    }
+}
+@media screen and (max-width:480px){
+    .columns{
+        -moz-column-count:1;
+        -webkit-column-count:1;
+        column-count:1
+    }
+}
+header p{
+    position:relative;
+    margin:0 0 1.5em 0
+}
+header h2+p{
+    font-size:1.25em;
+    margin-top:-1em
+}
+header h3+p{
+    font-size:1.1em;
+    margin-top:-.8em
+}
+header h4+p,header h5+p,header h6+p{
+    font-size:.9em;
+    margin-top:-.6em
+}
+header p{
+    color:#bbb
+}
+#header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #B90B0B;
+    padding: 3em 0 2em;
+}
+#header .inner .content{
+    text-align:center
+}
+#header .inner .content h1{
+    font-size:4em;
+    font-family:Pattaya,sans-serif;
+    margin:0 0 .25em 0;
+    color:#B90B0B;
+    left: -2000px;
+    position: absolute;
+}
+#header .inner .content h2{
+    font-size:1.3em;
+    margin: 1em 0 0;
+    background: white;
+    color: #B90B0B;
+    padding: 20px;
+    border: 5px double #B90B0B;
+}
+#header .inner img {
+    max-width: 400px;
+}
+@media screen and (max-width:736px){
+    #header .inner{
+        font-size:.75em;
+        padding:3em
+    }
+    #header .inner img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:480px){
+    #header .inner{
+        padding:2em;
+        font-size:.65em
+    }
+}
+#main{
+    flex: 1 0 auto;
+    padding:2em
+}
+#main .inner{
+    max-width:100%
+}
+#footer{
+    flex-shrink: 0;
+    position:relative;
+    color:#fff;
+    width:100%;
+    text-align:center;
+}
+#footer .inner{
+    display:flex;
+    position:relative;
+    background:#B90B0B;
+    padding:2em;
+}
+#footer .inner .content{
+    text-align:left;
+    color:rgba(255,255,255,.75);
+    padding:2em;
+    display:inline-block
+}
+#footer .inner .content h3{
+    color:#fff;
+    font-size:1.75em;
+    margin-bottom:10px;
+}
+#footer .inner .content a{
+    color:#fff
+}
+#footer .inner .content a:hover{
+    color:rgba(255,255,255,.75)
+}
+#footer .inner .content p{
+    margin:0
+}
+@media screen and (max-width:980px){
+    #footer{
+        position:relative;
+        bottom:0
+    }
+    #footer .inner{
+        height:auto;
+        display:block
+    }
+    #footer .inner .content{
+        display:block;
+        width:100%;
+        text-align:center
+    }
+}
+@media screen and (max-width:480px){
+    #footer .inner{
+        padding:2em
+    }
+    #footer .inner .content{
+        padding:1em
+    }
+}
+.contact-us {padding: 2em; text-align: center;}
+@media screen and (max-width:480px){ .contact-us {padding: 0;} }
+label {display: block;}
+input[type=text],input[type=email] {padding: .8em; min-width: 300px; margin-bottom: 10px;}
+textarea {padding: .8em; min-width: 300px; height: 100px;}
+button[type=submit] {margin-top: 10px; padding: 1em; min-width: 300px; background: #B90B0B; color: white; border: 0; border-radius: 5px;}
