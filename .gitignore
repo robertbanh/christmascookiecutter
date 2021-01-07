@@ -25,3 +25,6 @@ yarn-error.log
 # Composer
 composer.phar
 composer.lock
+
+# namecheap
+.well-known
